@@ -1,6 +1,6 @@
 :root {
     --background: white;
-    --text-primary: beige;
+    --text-primary: black;
     --button-bg: black;
     --button-text:white;
 
@@ -9,7 +9,7 @@
     --background: rgb(24, 22, 22);
     --text-primary: white;
     --button-bg: white;
-    --button-text:beige;
+    --button-text:black;
 }
 .lightdarkmode{
     display: flex;
@@ -20,4 +20,24 @@
     font-size: 20px;
     transition: all 0.5s;
 
+}
+.lightdarkmode .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+}
+.lightdarkmode .container p{
+    color: var(--text-primary);
+    font-size: 40px;
+}
+.lightdarkmode .container button{
+    background-color: var(--button-bg);
+    border: 1px solid var(--button-bg);
+    color: var(--button-text);
+    padding: 12px;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
 }
