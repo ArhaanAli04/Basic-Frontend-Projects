@@ -1,17 +1,20 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-import LoginForm from './Components/LoginForm/LoginForm'
+// App.jsx
+
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import './App.css';
+import LoginForm from './Components/LoginForm/LoginForm';
+import RegisterForm from './Components/RegisterForm/RegisterForm';
 
 function App() {
- 
-
   return (
-    <>
-      <LoginForm></LoginForm>
-    </>
-  )
+    <Router> 
+      <Routes> 
+        <Route path="/login" element={<LoginForm />} /> 
+        <Route path="/register" element={<RegisterForm />} /> 
+      </Routes>
+    </Router>
+  );
 }
 
-export default App
+export default App;
