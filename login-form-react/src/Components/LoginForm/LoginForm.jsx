@@ -1,6 +1,6 @@
 // LoginForm.jsx
 
-import React from 'react';
+
 import { FaUser, FaLock } from 'react-icons/fa';
 import { Link } from 'react-router-dom'; // Import Link from react-router-dom
 import './LoginForm.css';

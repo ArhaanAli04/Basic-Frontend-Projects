@@ -1,6 +1,14 @@
-/* FileUpload.css */
+/* Assignment.css */
 
-.drop-container {
+/* Centering container */
+.assignment-wrapper {
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    align-items: center; /* Centers vertically */
+    height: 100vh; /* Full viewport height */
+  }
+  
+  .drop-container {
     position: relative;
     display: flex;
     gap: 10px;
@@ -16,6 +24,7 @@
     cursor: pointer;
     transition: background 0.2s ease-in-out, border 0.2s ease-in-out;
     font-family: Arial, Helvetica, sans-serif;
+    background-color: white; /* Optional: add a background to the drop-container */
   }
   
   .drop-container:hover {
@@ -34,7 +43,8 @@
     text-align: center;
     transition: color 0.2s ease-in-out;
   }
-  .file-upload-button{
+  
+  .file-upload-button {
     background-color: lightblue;
     cursor: pointer;
     padding: auto;
@@ -45,7 +55,8 @@
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
   }
-  .file-upload-button:hover{
+  
+  .file-upload-button:hover {
     background-color: rgb(31, 50, 215);
   }
   
